@@ -1,0 +1,23 @@
+{
+  "name": "reaction-gifs",
+  "description": "Find the perfect gif for any message",
+  "main": "server.js",
+  "authors": [
+    "saiyijinprince"
+  ],
+  "homepage": "https://github.com/saiyijinprince/reaction-gifs.git",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.4.8",
+    "angular-ui-router": "~0.2.15"
+  },
+  "devDependencies": {
+    "angular-mocks": "~1.4.8"
+  }
+}
