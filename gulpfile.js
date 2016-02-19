@@ -411,11 +411,16 @@ pipes.builtAppProd = function () {
 pipes.servedAppDev = function () {
 
     // start nodemon to auto-reload the dev server
-    plugins.nodemon({script: 'server.js', ext: 'js', watch: ['devServer/'], env: {NODE_ENV: 'development'}})
-        .on('change', ['validate-devserver-scripts'])
-        .on('restart', function () {
-            console.log('[nodemon] restarted dev server');
-        });
+    plugins.nodemon({
+        script: 'server.js',
+        ext: 'js',
+        watch: ['devServer/'],
+        env: {NODE_ENV: 'development'}})
+            .on('change', ['validate-devserver-scripts'])
+            .on('restart', function () {
+                console.log('[nodemon] restarted dev server');
+            });
+
 
     // start live-reload server
     plugins.livereload.listen({start: true});
