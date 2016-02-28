@@ -9,7 +9,7 @@ module app.Directives {
         public templateUrl:string = 'components/rhs.html';
         public restrict:string = 'E';
         public controller:string = 'rhsController';
-        public controllerAs:string = 'rctrl';
+        public controllerAs:string = 'rCtrl';
         public scope = {};
 
         constructor(private $log:ng.ILogService) {

@@ -1,3 +1,39 @@
+<!--
 <div style="width: inherit">
-    <h1>THIS IS A TEST</h1>
+    <div ng-repeat="g in rCtrl.gifData.gifs">
+        <a href="{{MakeUrl(g)}}">
+            <img ng-src="https://i.imgur.com/{{g}}b.jpg" />
+        </a>
+    </div>
+</div>
+-->
+
+<style type="text/css">
+    .label {
+        margin: 3px;
+        float: left;
+    }
+
+    .new-row {
+        clear: left;
+        margin-left: 10px;
+    }
+
+    #cell {
+        cursor: pointer;
+    }
+</style>
+
+<div class="label" ng-class="{'new-row':rCtrl.StartNewRow($index, rCtrl.columnBreak)}" ng-repeat="g in rCtrl.gifData.gifs">
+    <!--
+    <a href="{{MakeUrl(g)}}">
+        <img ng-src="https://i.imgur.com/{{g}}b.jpg" />
+    </a>
+    -->
+    <!--
+    <a href="main/s/{{rCtrl.currentSection}}/g/{{g}}/">
+        <img ng-src="https://i.imgur.com/{{g}}b.jpg" />
+    </a>
+    -->
+    <img id="cell" ng-src="https://i.imgur.com/{{g}}b.jpg" ng-click="rCtrl.SelectGif(g)" />
 </div>

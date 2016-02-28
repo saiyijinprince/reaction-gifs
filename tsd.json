@@ -26,9 +26,6 @@
     "angular-ui-router/angular-ui-router.d.ts": {
       "commit": "dc9dabe74a5be62613b17a3605309783a12ff28a"
     },
-    "slickgrid/SlickGrid.d.ts": {
-      "commit": "1984ea435fe9e93a012d50db7773db58ae5d494b"
-    },
     "jasmine/jasmine.d.ts": {
       "commit": "d1f6bde13f2209be42e86c3686761e8bfcbb50a5"
     }

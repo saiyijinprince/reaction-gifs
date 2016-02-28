@@ -351,11 +351,8 @@ pipes.validatedIndex = function () {
 // Notice that there are three pipe segments that feed into the index stream.
 // The gulp-inject plugin is used to write references into the index file in the places denoted.
 pipes.builtIndexDev = function (includeUnitTests) {
-
     var orderedVendorScripts = pipes.builtVendorScripts(paths.dev.vendorScripts);
-
     var orderedAppScripts = pipes.builtAppScriptsDev(includeUnitTests);
-
     var appStyles = pipes.builtStylesDev();
 
     return pipes.validatedIndex()

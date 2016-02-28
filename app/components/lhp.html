@@ -1,3 +1,16 @@
+<style type="text/css">
+    #gif-section {
+        padding-top: 5px;
+        padding-left: 5px;
+        font-weight: bolder;
+        cursor: pointer;
+    }
+
+    #gif-section:hover {
+        background-color: #2e6da4;
+    }
+
+</style>
 <div style="width: inherit">
-    THIS IS A TEST
+    <div id="gif-section" ng-repeat="c in lctrl.gifSections.availableSections" ng-click="lctrl.SelectSection(c)">{{c}}</div>
 </div>

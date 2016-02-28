@@ -87,11 +87,13 @@ module.exports = function(app) {
     app.route('/cats')
         .get(function(req, res) {
            res.json(
-               [
-                   "NOPE",
-                   "ABANDON THREAD",
-                   "SHUT UP"
-               ]
+               {
+                   "availableSections": [
+                       "NOPE",
+                       "ABANDON THREAD",
+                       "SHUT UP"
+                     ]
+               }
            );
         });
 };

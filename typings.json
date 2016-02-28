@@ -8,7 +8,6 @@
     "Q": "github:DefinitelyTyped/DefinitelyTyped/q/Q.d.ts#1da639a106527e0c4010b354a1efe52a3059a291",
     "node": "github:DefinitelyTyped/DefinitelyTyped/node/node.d.ts#1da639a106527e0c4010b354a1efe52a3059a291",
     "angular-ui-router": "github:DefinitelyTyped/DefinitelyTyped/angular-ui-router/angular-ui-router.d.ts#dc9dabe74a5be62613b17a3605309783a12ff28a",
-    "SlickGrid": "github:DefinitelyTyped/DefinitelyTyped/slickgrid/SlickGrid.d.ts#1984ea435fe9e93a012d50db7773db58ae5d494b",
     "jasmine": "github:DefinitelyTyped/DefinitelyTyped/jasmine/jasmine.d.ts#d1f6bde13f2209be42e86c3686761e8bfcbb50a5"
   }
 }

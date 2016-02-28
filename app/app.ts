@@ -1,5 +1,4 @@
 /// <reference path="../typings/browser.d.ts" />
-
 module reactionGifs {
     class MyConfig {
         constructor( private $stateProvider:ng.ui.IStateProvider,
@@ -11,15 +10,26 @@ module reactionGifs {
             this.$stateProvider.state( 'home',
                 {
                     abstract:true,
-                    template: '<main></main>',
-                    url: '/'
+                    template: '<main></main>'
                 }).state('home.main',
                 {
                     views: {
                         'lhp@home': { template: '<lhp></lhp>' },
-                        'rhs@home': { template: '<rhs></rhs>' }
+                        'rhs@home': { template: '<div></div>' }
                     },
                     url: '/main',
+                }).state('home.main.section',
+                {
+                    views: {
+                        'rhs@home': { template: '<rhs></rhs>' }
+                    },
+                    url: '/s/:section'
+                }).state('home.main.section.gif',
+                {
+                    views: {
+                        'rhs@home': { template: '<gif-viewer></gif-viewer>' }
+                    },
+                    url: '/gif/:gifId'
                 });
 
             this.$urlRouterProvider.otherwise('/main');
