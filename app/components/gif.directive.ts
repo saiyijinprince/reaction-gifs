@@ -5,23 +5,23 @@
 
 module app.Directives {
     'use strict';
-    export class GifViewerDirective implements  ng.IDirective {
-        public templateUrl:string = 'components/gif-viewer.html';
+    export class GifDirective implements ng.IDirective {
+        public templateUrl:string = 'components/gif.html';
         public restrict:string = 'E';
-        public controller:string = 'gifViewerController';
+        public controller:string = 'gifController';
         public controllerAs:string = 'gifCtrl';
         public scope = {};
 
         constructor(private $log:ng.ILogService) {
-            this.$log.info('gif viewer directive');
+            this.$log.info('gif directive');
         }
 
         public static Factory() {
             return (log:ng.ILogService) => {
-                return new GifViewerDirective(log);
+                return new GifDirective(log);
             };
         }
     }
 
-    angular.module('reactionGifs').directive('gif-viewer', ['$log', app.Directives.GifViewerDirective.Factory()]);
+    angular.module('reactionGifs').directive('gif', ['$log', app.Directives.GifDirective.Factory()]);
 }

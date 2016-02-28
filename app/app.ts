@@ -27,9 +27,9 @@ module reactionGifs {
                 }).state('home.main.section.gif',
                 {
                     views: {
-                        'rhs@home': { template: '<gif-viewer></gif-viewer>' }
+                        'rhs@home': { template: '<gif></gif>' }
                     },
-                    url: '/gif/:gifId'
+                    url: '/g/:gifId'
                 });
 
             this.$urlRouterProvider.otherwise('/main');

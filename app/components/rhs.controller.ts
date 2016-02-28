@@ -59,5 +59,5 @@ module app.Controllers {
            return arr;
        };
     });
-    angular.module('reactionGifs').controller( 'rhsController', ['$log', '$state', 'GifDataService', RhsController] );
+    angular.module('reactionGifs').controller( 'rhsController', ['$log', '$state', 'GifDataService', app.Controllers.RhsController] );
 }
