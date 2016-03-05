@@ -7,7 +7,4 @@ module app.Models {
         gifs:Array<string>;
         meta:any;
     }
-    export interface IGifsData {
-        sections:Array<ISection>;
-    }
 }

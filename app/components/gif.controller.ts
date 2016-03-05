@@ -13,9 +13,8 @@ module app.Controllers {
             this.Init();
         }
 
-        public MakeUrl():string
-        {
-            return 'https://i.imgur.com/' + this.currentGif + '.gif'
+        public MakeUrl():string {
+            return 'https://i.imgur.com/' + this.currentGif + '.gif';
         }
 
         private Init() {

@@ -10,7 +10,11 @@
         background-color: #2e6da4;
     }
 
+    .selected {
+        background-color: #2e6da4;
+    }
+
 </style>
-<div style="width: inherit">
-    <div id="gif-section" ng-repeat="c in lctrl.gifSections.availableSections" ng-click="lctrl.SelectSection(c)">{{c}}</div>
+<div>
+    <div id="gif-section" ng-class="{ selected: lctrl.setBackgroundColor(c) }" ng-repeat="c in lctrl.gifSections" ng-click="lctrl.SelectSection(c)">{{c}}</div>
 </div>
